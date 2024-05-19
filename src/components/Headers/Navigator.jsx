@@ -20,7 +20,7 @@ const Navigator = () => {
                   <h1 className="text-white text-lg">Contact</h1>
                </section>
             </NavLink>
-            <NavLink to="/features">
+            <NavLink to="/auth/login">
                <section>
                   <button className="text-white text-lg border border-1 w-28 rounded-md h-10">Login</button>
                </section>

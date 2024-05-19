@@ -35,9 +35,21 @@ code {
 }
 
 .bg-login {
-  width: 100vw;
-  height: 100vh; 
+  width: 100%;
+  height: 100vh;
   background-image: url('/public/Login/bg-login.svg'); 
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat; 
+  overflow: hidden; 
+}
+
+.bg-signup { 
+  /* max-width: 70%;
+  width: 100%; */
+  width: 100%;
+  height: 100vh;
+  background-image: url('/public//Signup/bg_sign.svg'); 
   background-size: cover;
   background-position: center; 
   background-repeat: no-repeat; 
