@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-const AuthInput = ({ inputType, placeHolder , value , onChange , errorMessage , label}) => {
+const SetInputs = ({ inputType, placeHolder , value , onChange , errorMessage , label}) => {
   const [showPassword, setShowPassword] = useState(false);
   const [isEdge, setIsEdge] = useState(false);
 
@@ -14,14 +14,14 @@ const AuthInput = ({ inputType, placeHolder , value , onChange , errorMessage , 
   }, []);
 
   return (
-    <section className="auth-button flex flex-col gap-1 w-[350px]">
+    <section className="auth-button flex flex-row gap-72 ">
       <div className="relative">
         <input
           type={inputType === "password" && !isEdge ? (showPassword ? "text" : "password") : inputType}
           placeholder={placeHolder}
           value={value}
           onChange={onChange}
-          className="w-full pl-4 pr-4 py-2 bg-[#fff] h-[40px] border-[1px] text-sm items-center border-[#E0E0E0] rounded-[5px] outline-none  placeholder:text-[#8E8E8E] placeholder:text-sm placeholder:italic mb-5" 
+          className="w-[250px] pl-4 pr-4 py-2  bg-[#D9D9D980] h-[40px] border-[1px] text-sm items-center border-[#807d7d] rounded-[5px] outline-none  placeholder:text-[#8E8E8E] placeholder:text-sm  mb-5" 
         />
         {inputType === "password" && !isEdge && (
           <div
@@ -41,4 +41,4 @@ const AuthInput = ({ inputType, placeHolder , value , onChange , errorMessage , 
   );
 };
 
-export default AuthInput;
+export default SetInputs;

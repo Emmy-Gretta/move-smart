@@ -49,7 +49,7 @@ code {
   width: 100%; */
   width: 100%;
   height: 100vh;
-  background-image: url('/public//Signup/bg_sign.svg'); 
+  background-image: url('/public/Signup/bg_sign.svg'); 
   background-size: cover;
   background-position: center; 
   background-repeat: no-repeat; 
@@ -58,5 +58,156 @@ code {
 
 .gradient{
   background: linear-gradient(to right, #0D2336, #172B3A, #273841);
+}
+
+.height{
+  height: 100vh;
+}
+
+.bg-search{
+  background-color: rgba(4, 28, 50, 0.6);
+}
+
+.react-calendar {
+  background-color: white;
+  border: none;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.react-calendar__navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.react-calendar__navigation button {
+  background: none;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  color: #1a202c; /* Change color as needed */
+}
+
+.react-calendar__month-view__weekdays {
+  font-weight: bold;
+  color: #1a202c; /* Change color as needed */
+  text-align: center;
+  padding-bottom: 0.5rem;
+}
+
+.react-calendar__tile {
+  max-width: initial !important;
+  padding: 0.75rem;
+  text-align: center;
+  border-radius: 0.375rem;
+  border: none;
+}
+
+.react-calendar__tile--now {
+  background: #e2e8f0; /* Change color as needed */
+  color: #1a202c; /* Change color as needed */
+}
+
+.react-calendar__tile--active {
+  background: #2563eb; /* Change color as needed */
+  color: white;
+}
+
+.react-calendar__tile:enabled:hover {
+  background: #cbd5e0; /* Change color as needed */
+}
+
+.sidebar {
+  position: fixed; /* Make sidebar fixed */
+  height: 100%; /* Make sidebar full height of viewport */
+  overflow-y: auto; /* Enable scrolling if content exceeds sidebar height */
+}
+
+.tick-shadow{
+  box-shadow: 2px -2px 10px 0px #00000066;
+
+box-shadow: -2px 0px 10px 0px #00000066;
+
+box-shadow: 2px 0px 10px 0px #00000066;
+
+box-shadow: 0px 2px 10px 0px #00000066;
+
+}
+
+.dtick-shadow{
+  box-shadow: 2px -2px 10px 0px #000000;
+
+box-shadow: -2px 0px 10px 0px #000000;
+
+box-shadow: 2px 0px 10px 0px #000000;
+
+box-shadow: 0px 2px 10px 0px #000000;
+
+}
+
+.book-shadow{
+  box-shadow: -2px 2px 10px 0px #0000004D;
+
+box-shadow: -2px 0px 10px 0px #0000004D;
+
+box-shadow: 2px 0px 10px 0px #0000004D;
+
+box-shadow: 0px 2px 10px 0px #0000004D;
+
+}
+
+/* index.css or App.css */
+::-webkit-scrollbar {
+  display: none;
+}
+
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  position: relative;
+  border-radius: 10px;
+  max-width: 640px;
+  width: 100%;
+  height: 560px;
+  border-radius: 25px;
+}
+
+.modal-contents {
+  background: white;
+  padding: 20px;
+  position: relative;
+  max-width: 400px;
+  width: 100%;
+  height: 320px;
+  border-radius: 4px;
+}
+
+.modal-contentp {
+  background: white;
+  padding: 20px;
+  position: relative;
+  max-width: 440px;
+  border-radius: 7px;
+  width: 100%;
+  height: 250px;
+}
+
+.bord{
+  border: 1px solid #000000CC;
 }
 

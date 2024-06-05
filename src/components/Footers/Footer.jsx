@@ -38,7 +38,7 @@ const Footer = () => {
                <section className="flex flex-col gap-2">
                   <h1 className="text-xl text-[#ECB365] font-bold">Account</h1>
                   <section className="flex flex-col gap-2">
-                  <NavLink to="/signup">
+                  <NavLink to="/auth/signup">
                <section>
                   <h1 className="text-white text-sm">Sign up</h1>
                </section>

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-const AuthInput = ({ inputType, placeHolder , value , onChange , errorMessage , label}) => {
+const DashInput = ({ inputType, placeHolder , value , onChange , errorMessage , label}) => {
   const [showPassword, setShowPassword] = useState(false);
   const [isEdge, setIsEdge] = useState(false);
 
@@ -14,7 +14,10 @@ const AuthInput = ({ inputType, placeHolder , value , onChange , errorMessage , 
   }, []);
 
   return (
-    <section className="auth-button flex flex-col gap-1 w-[350px]">
+    <section className="auth-button flex flex-col gap-1 w-[243px]">
+      <div>
+        <label htmlFor="in" className="text-sm text-white">{label}</label>
+      </div>
       <div className="relative">
         <input
           type={inputType === "password" && !isEdge ? (showPassword ? "text" : "password") : inputType}
@@ -41,4 +44,4 @@ const AuthInput = ({ inputType, placeHolder , value , onChange , errorMessage , 
   );
 };
 
-export default AuthInput;
+export default DashInput;
